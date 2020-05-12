@@ -14,6 +14,7 @@ spending some money.
 - ✓ [Native Instruments Audio 8 DJ](#native-instruments-audio-8-dj)
 - ✓ [Rane SL-1](#rane-sl-1)
 - ✖️ [Pioneer DJM-750MK2](#pioneer-djm-750mk2)
+- ✖️ [Pioneer DJM-850](#pioneer-djm-850)
 
 ## Allen & Heath XONE:K2
 
@@ -118,3 +119,14 @@ USB, 4 inputs, 4 outputs. Toggable phono preamps on all 4 inputs.
 USB, 10 inputs, 10 output (?). Toggleable phono preamps on 4 inputs.
 
 - https://www.pioneerdj.com/en-gb/product/mixer/djm-750mk2/black/overview/
+
+## Pioneer DJM-850
+
+- ✖️  Not working on GNU/Linux. Device can be listed with `lsusb`, MIDI may work
+but the built in audio soundcard doesn't work on GNU/Linux (propietary
+implementation (`Vendor Specific USB Class`), requires reverse engineering).
+
+- Vendor ID : `08e4`
+- Device ID : `0163`
+
+- https://www.pioneerdj.com/en/product/mixer/archive/djm-850/black/overview/
