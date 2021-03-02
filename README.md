@@ -12,9 +12,9 @@ spending some money.
 - ✓ [Native Instruments Audio 4 DJ](#native-instruments-audio-4-dj)
 - ✓ [Native Instruments Audio 6](#native-instruments-audio-6)
 - ✓ [Native Instruments Audio 8 DJ](#native-instruments-audio-8-dj)
+- ✓ [Pioneer DJM-850](#pioneer-djm-850)
 - ✓ [Rane SL-1](#rane-sl-1)
 - ✖️ [Pioneer DJM-750MK2](#pioneer-djm-750mk2)
-- ✖️ [Pioneer DJM-850](#pioneer-djm-850)
 
 ## Allen & Heath XONE:K2
 
@@ -104,6 +104,14 @@ Set inputs to Phono: `$ amixer -c [cardnumber] cset numid=1 1`
 
 Set inputs to Line: `$ amixer -c [cardnumber] cset numid=1 0`
 
+## Pioneer DJM-850
+
+- ✓ Working since Linux 5.13
+
+USB, 8 inputs, 8 outputs. 24bits soundcard at 44.1kHz, 48kHz, 96kHz samplerate.
+
+Use the `alsamixer` command to choose the mixer's USB output options.
+
 ## Rane SL-1
 
 - ✓ Working on Fedora ~2011. Unable to turn on the phono preamps.
@@ -119,14 +127,3 @@ USB, 4 inputs, 4 outputs. Toggable phono preamps on all 4 inputs.
 USB, 10 inputs, 10 output (?). Toggleable phono preamps on 4 inputs.
 
 - https://www.pioneerdj.com/en-gb/product/mixer/djm-750mk2/black/overview/
-
-## Pioneer DJM-850
-
-- ✖️  Not working on GNU/Linux. Device can be listed with `lsusb`, MIDI may work
-but the built in audio soundcard doesn't work on GNU/Linux (propietary
-implementation (`Vendor Specific USB Class`), requires reverse engineering).
-
-- Vendor ID : `08e4`
-- Device ID : `0163`
-
-- https://www.pioneerdj.com/en/product/mixer/archive/djm-850/black/overview/
